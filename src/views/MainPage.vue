@@ -8,12 +8,12 @@
     <v-card class="ma-4 pa-1" color="#E3F2FD">
         <div>ID cделки: {{ card.OFFER_ID }}</div>
         <div>ФИО: {{ card.CONTACT_TITLE }}</div> 
-    <div>Тип сделки: {{ card.OFFER_TYPE_ID ? card.OFFER_TYPE_ID : 'Unknow' }}</div>
-    <div>Cегмент сделки: {{ card.SEGMENT_NAME }}</div>
-    
+        <div>Тип сделки: {{ card.OFFER_TYPE_ID ? card.OFFER_TYPE_ID : 'Unknow' }}</div>
+        <div>Cегмент сделки: {{ card.SEGMENT_NAME }}</div>
     </v-card>
 </div>
-    </div></div>
+    </div>
+    </div>
 </template>
 <script>    
 const API_GET_DEALS = 'https://nastintesthodl.stocrm.ru/api/external/v1/offers/get_from_filter?SID=10813_0c0a9a2f86eab09196705a274378b64a&SORT[DATE_CREATE]=ASC'
