@@ -30,7 +30,6 @@ export default {
         const { RESPONSE } = await rawDealStatus.json()
         const rawDeals = await fetch(API_GET_DEALS)
         this.deals = await rawDeals.json()
-        console.log(this.deals)
         for (let key in RESPONSE){
             const title = RESPONSE[key]['TITLE']
             const cards = this.deals.RESPONSE.DATA.filter((item)=>item['STATUS_NAME'] === title)
