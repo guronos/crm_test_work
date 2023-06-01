@@ -8,7 +8,7 @@
     <v-card class="ma-4 pa-1" color="#E3F2FD">
         <div>ID cделки: {{ card.OFFER_ID }}</div>
         <div>ФИО: {{ card.CONTACT_TITLE }}</div> 
-        <div>Тип сделки: {{ card.OFFER_TYPE_ID ? card.OFFER_TYPE_ID : 'Unknow' }}</div>
+        <div>Тип сделки: {{ card.OFFERS_TYPE_NAME ? card.OFFERS_TYPE_NAME : 'Unknow' }}</div>
         <div>Cегмент сделки: {{ card.SEGMENT_NAME }}</div>
     </v-card>
 </div>
